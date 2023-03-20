@@ -1,0 +1,33 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage[bibstyle=apa]{biblatex}
+%,doi=false,url=true
+  
+\addbibresource{publications.bib}
+
+\usepackage{hyperref}
+
+\title{Publications}
+\author{Jeremy I. McCormick}
+\date{March 2023}
+
+\begin{document}
+
+\maketitle
+
+\nocite{*}
+
+\printbibliography[keyword={journal}, title=Journal Articles]
+\printbibliography[keyword={conf}, title=Conference Proceedings]
+\printbibliography[keyword={physics}, title=Physics Collaborations]
+\printbibliography[keyword={misc}, title=Miscellaneous]
+
+% Additional documents not added yet:
+% https://pages.uoregon.edu/silicondetector/docs.html
+% https://arxiv.org/abs/0712.2356
+% https://gdml.web.cern.ch/GDML/doc/GDMLmanual.pdf
+
+\end{document}
